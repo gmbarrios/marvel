@@ -1,9 +1,11 @@
-import React from "react";
+import { SearchBar } from "./components/SearchBar";
 
-export const App = () => {
+function App() {
   return (
-    <header>
-      <searchBar />
-    </header>
+    <>
+      <SearchBar />
+    </>
   );
 }
+
+export default App;
