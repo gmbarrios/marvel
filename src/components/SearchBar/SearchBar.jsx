@@ -3,7 +3,7 @@ export const SearchBar = () => {
     return (
         <header>
         <div className={styles.searchBox}>
-            <div className={styles.logo}>Logo</div>
+            <div className={styles.logo}></div>
             <input className={styles.searchInput} type="search" placeholder="Buscar" />
             Buscar</div>
         </header>
