@@ -1,4 +1,14 @@
 .searchBox {
-    background-color: red;
-    
+    background-color: lightgreen;
+    display: flex;
+    height: 40px;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+}
+
+.logo {
+    background-color: darkgreen;
 }
