@@ -7,11 +7,12 @@
 .searchInput {
     background-color: transparent;
     border: none;
+    outline: none;
 }
 
 .logo {
     background-image: url("../../../public/marvel-logo.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 300px;
+    width: 140px;
 }
