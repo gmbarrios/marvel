@@ -5,7 +5,7 @@ export const SearchBar = () => {
             <div>
                  <div className={styles.searchBox}>
                      <div className={styles.logo}></div>
-                      <input className={styles.searchInput} type="search" placeholder="Buscar" /*class=""search-input*/ />
+                      <input className={styles.searchInput} type="search" placeholder="Buscar" />
                   </div>
             </div>
         </header>

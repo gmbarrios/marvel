@@ -1,7 +1,9 @@
 import styles from "./card.module.css";
 
-export const Card = () => {
+
+
+export const Card = ({name, img}) => {
     return (
-    <div>Carta</div>
-    )
-};
+        <div className={styles.cardBox}>{name}<img src={`/public/${img}`} />
+      </div>
+    )};

@@ -1,0 +1,19 @@
+.cardBox {
+ /*   background-color: green; */
+    width: 200px;
+    height: 300px;
+    border: solid 1px;
+}
+
+/* .starIcon {
+    background-image: url("../../../public/star-icon.png");
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+}
+
+.favoriteIcon {
+    width: 32px;
+    height: 80px;
+} */
+
