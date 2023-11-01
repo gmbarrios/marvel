@@ -1,0 +1,7 @@
+.cardsContainer {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+    background-color: lightgray;
+}
