@@ -1,8 +1,29 @@
 import { Card } from "./components/Card";
 import { SearchBar } from "./components/SearchBar";
 import styles from "./app.module.css";
+import { ApiCall } from "./ApiCall";
 
-const characters = [
+
+
+ApiCall();
+
+function App() {
+  return (
+    <>
+     <SearchBar />
+     <div className={styles.cardsContainer}>
+     <Card />
+     </div>
+    </>
+  );
+}
+
+export default App;
+
+
+
+
+/* const characters = [
   { id: "0", name: "batman", img: "batman.jpg" },
   { id: "1", name: "spiderman", img: "spiderman.jpg" },
   { id: "2", name: "hulk", img: "hulk.jpg" },
@@ -15,21 +36,11 @@ const characters = [
   { id: "9", name: "spiderman", img: "spiderman.jpg" },
   { id: "10", name: "hulk", img: "hulk.jpg" },
   { id: "11", name: "wolverine", img: "wolverine.jpg" },
-];
+]; */
 
-function App() {
-  return (
-    <>
-     <SearchBar />
-     <div className={styles.cardsContainer}>
-      {characters.map((character) => {
+
+/* characters.map((character) => {
         return (
           <Card name={character.name} img={character.img} key={character.id} />
         );
-      })}
-      </div>
-    </>
-  );
-}
-
-export default App;
+        })*/
