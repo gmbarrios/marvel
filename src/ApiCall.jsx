@@ -5,10 +5,23 @@ export const ApiCall = async() => {
 
         console.log(response);
 
-        const datos = await response.json();
-        console.log(datos);
+        const data = await response.json();
+        // return data
+        console.log(data);
     } catch(error) {
         console.log(error);
+        return null
     }
-}
 
+    
+
+
+        /* const getImageUrl = (thumbnail) => {
+            return `${thumbnail.path}.${thumbnail.extension}`;
+        };
+
+        const imageUrl = getImageUrl(character.thumbnail);
+            <img src={imageUrl} alt={character.name} />; */
+        
+
+}
