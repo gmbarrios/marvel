@@ -4,7 +4,8 @@ export const SearchBar = () => {
         <header>
             <div>
                  <div className={styles.searchBox}>
-                     <div className={styles.logo}></div>
+                     <div className={styles.logo}></div>                    
+                      <button><img src="search-icon.jpg" /></button>
                       <input className={styles.searchInput} type="search" placeholder="Buscar" />
                   </div>
             </div>

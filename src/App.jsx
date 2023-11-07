@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { CONSTANTS } from "./Utils/constants";
 
 
+
 function App() {
   const [marvelCharacters, setMarvelCharacters] = useState(null);
   async function fetchData() {
@@ -36,11 +37,13 @@ function App() {
                   img={urlImage}
                 />
               );
-            })}
+          })}
         </div>
       </div>
     </>
   );
 }
+
+
 
 export default App;
