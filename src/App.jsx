@@ -1,7 +1,7 @@
 import { Card } from "./components/Card";
 import { SearchBar } from "./components/SearchBar";
 import styles from "./app.module.css";
-import { ApiCall } from "./ApiCall";
+import { ApiCharacters } from "./ApiCharacters";
 import { useState, useEffect } from "react";
 import { CONSTANTS } from "./Utils/constants";
 
@@ -10,7 +10,7 @@ import { CONSTANTS } from "./Utils/constants";
 function App() {
   const [marvelCharacters, setMarvelCharacters] = useState(null);
   async function fetchData() {
-    const response = await ApiCall();
+    const response = await ApiCharacters();
     setMarvelCharacters(response.data.results);
   }
   useEffect(() => {
