@@ -1,0 +1,1 @@
+export { GetMarvelComics } from "./GetMarvelComics";

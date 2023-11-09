@@ -1,15 +1,17 @@
 .cardBox {
-    /* width: 200px;
-    height: 300px;
-    border: solid 1px;*/
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
 }
 
 .cardBox img {
     border-radius: 2px;
+    display: block;
+    max-width: 100%;
     /* mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.15) 100%);
    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.15) 100%); */
 }
