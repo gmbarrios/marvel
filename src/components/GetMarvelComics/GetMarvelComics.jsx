@@ -11,4 +11,3 @@ export const GetMarvelComics = async () => {
     }
     return null;
   };
-  

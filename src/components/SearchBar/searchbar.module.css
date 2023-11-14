@@ -24,7 +24,7 @@
 }
 
 .logo {
-    background-image: url("../../../public/marvel-logo.jpg");
+    background-image: url("/marvel-logo.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 140px;
