@@ -7,9 +7,26 @@ import { CONSTANTS } from "./Utils/constants";
 import { CardComicsDetails } from "./components/CardComicsDetails/CardComicsDetails";
 import { GetMarvelComics } from "./components/GetMarvelComics";
 import { GetComicDetails } from "./components/GetComicDetails/GetComicDetails";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 
 function App() {
+
+  return (
+    <>
+    <nav>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/card-comics-details">Card Comics Details</Link></li>
+      </ul>
+    </nav>
+    <Routes>
+      <Route path="/" element={<Card /> } />
+        <Route path="/card-comics-details" element={<CardComicsDetails />} />
+    </Routes>
+  </>
+  );
+
   const [marvelCharacters, setMarvelCharacters] = useState(null);
   const [marvelComics, setMarvelComics] = useState(null);
   const [comicDetails, setComicDetails] = useState(null);
@@ -95,7 +112,7 @@ function App() {
         </div>
     </>
   );
-}
 
+}
 
 export default App;

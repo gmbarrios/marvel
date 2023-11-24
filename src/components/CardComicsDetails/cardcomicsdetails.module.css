@@ -1,7 +1,8 @@
 .backgroundContainer {
-    background-color: lightseagreen;
+    background-color: lightgray;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: left;
@@ -10,14 +11,15 @@
 }
 
 .comicImage {
-    background-color: brown;
-    height: 95vh;
+    background-color: lightgray;
+    height: 123vh;
     width: 80vh;
     border-radius: 2px;
+    background-repeat: no-repeat;
 }
 
 .comicInfo {
-    background-color: gold;
+    background-color: lightgray;
     height: 75vh;
     width: 50vh;
     padding: 15px;
@@ -27,3 +29,15 @@
 .title {
     margin-top: 0%;
 }
+
+/* @media (max-width: 500px) {
+    .backgroundContainer {
+        width: 25vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .comicInfo {
+        width: 25vh;
+    }
+} */
