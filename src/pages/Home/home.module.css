@@ -1,0 +1,30 @@
+.cardsContainer {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+    background-color: lightgray;
+    place-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+
+@media (max-width: 1000px) {
+    .cardsContainer {
+      grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+    }
+  }
+  
+  @media (max-width: 780px) {
+    .cardsContainer {
+      grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .cardsContainer {
+      grid-template-columns: 1fr; /* Change to 1 column */
+    }
+  }
